@@ -43,10 +43,10 @@ function RegisterPage() {
   const [show, setShow] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [errors, setErrors] = useState<{
-    fullName?: string;
-    email?: string;
-    password?: string;
-    form?: string;
+    fullName?: string | undefined;
+    email?: string | undefined;
+    password?: string | undefined;
+    form?: string | undefined;
   }>({});
 
   useEffect(() => {

@@ -10,7 +10,7 @@ export async function signUp(params: {
   email: string;
   password: string;
   fullName: string;
-  company?: string;
+  company?: string | undefined;
   accountType: AccountType;
   language: string;
 }) {

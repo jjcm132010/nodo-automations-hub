@@ -10,12 +10,27 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AcademiaRouteImport } from './routes/academia'
+import { Route as AutomatizacionRouteImport } from './routes/automatizacion'
 import { Route as ComoFuncionaRouteImport } from './routes/como-funciona'
+import { Route as ExpertosRouteImport } from './routes/expertos'
+import { Route as LoginRouteImport } from './routes/login'
 import { Route as PreciosRouteImport } from './routes/precios'
+import { Route as RegistroRouteImport } from './routes/registro'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AcademiaRoute = AcademiaRouteImport.update({
+  id: '/academia',
+  path: '/academia',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AutomatizacionRoute = AutomatizacionRouteImport.update({
+  id: '/automatizacion',
+  path: '/automatizacion',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ComoFuncionaRoute = ComoFuncionaRouteImport.update({
@@ -23,40 +38,100 @@ const ComoFuncionaRoute = ComoFuncionaRouteImport.update({
   path: '/como-funciona',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ExpertosRoute = ExpertosRouteImport.update({
+  id: '/expertos',
+  path: '/expertos',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LoginRoute = LoginRouteImport.update({
+  id: '/login',
+  path: '/login',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const PreciosRoute = PreciosRouteImport.update({
   id: '/precios',
   path: '/precios',
   getParentRoute: () => rootRouteImport,
 } as any)
+const RegistroRoute = RegistroRouteImport.update({
+  id: '/registro',
+  path: '/registro',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/academia': typeof AcademiaRoute
+  '/automatizacion': typeof AutomatizacionRoute
   '/como-funciona': typeof ComoFuncionaRoute
+  '/expertos': typeof ExpertosRoute
+  '/login': typeof LoginRoute
   '/precios': typeof PreciosRoute
+  '/registro': typeof RegistroRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/academia': typeof AcademiaRoute
+  '/automatizacion': typeof AutomatizacionRoute
   '/como-funciona': typeof ComoFuncionaRoute
+  '/expertos': typeof ExpertosRoute
+  '/login': typeof LoginRoute
   '/precios': typeof PreciosRoute
+  '/registro': typeof RegistroRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/academia': typeof AcademiaRoute
+  '/automatizacion': typeof AutomatizacionRoute
   '/como-funciona': typeof ComoFuncionaRoute
+  '/expertos': typeof ExpertosRoute
+  '/login': typeof LoginRoute
   '/precios': typeof PreciosRoute
+  '/registro': typeof RegistroRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/como-funciona' | '/precios'
+  fullPaths:
+    | '/'
+    | '/academia'
+    | '/automatizacion'
+    | '/como-funciona'
+    | '/expertos'
+    | '/login'
+    | '/precios'
+    | '/registro'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/como-funciona' | '/precios'
-  id: '__root__' | '/' | '/como-funciona' | '/precios'
+  to:
+    | '/'
+    | '/academia'
+    | '/automatizacion'
+    | '/como-funciona'
+    | '/expertos'
+    | '/login'
+    | '/precios'
+    | '/registro'
+  id:
+    | '__root__'
+    | '/'
+    | '/academia'
+    | '/automatizacion'
+    | '/como-funciona'
+    | '/expertos'
+    | '/login'
+    | '/precios'
+    | '/registro'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AcademiaRoute: typeof AcademiaRoute
+  AutomatizacionRoute: typeof AutomatizacionRoute
   ComoFuncionaRoute: typeof ComoFuncionaRoute
+  ExpertosRoute: typeof ExpertosRoute
+  LoginRoute: typeof LoginRoute
   PreciosRoute: typeof PreciosRoute
+  RegistroRoute: typeof RegistroRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -68,11 +143,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/academia': {
+      id: '/academia'
+      path: '/academia'
+      fullPath: '/academia'
+      preLoaderRoute: typeof AcademiaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/automatizacion': {
+      id: '/automatizacion'
+      path: '/automatizacion'
+      fullPath: '/automatizacion'
+      preLoaderRoute: typeof AutomatizacionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/como-funciona': {
       id: '/como-funciona'
       path: '/como-funciona'
       fullPath: '/como-funciona'
       preLoaderRoute: typeof ComoFuncionaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/expertos': {
+      id: '/expertos'
+      path: '/expertos'
+      fullPath: '/expertos'
+      preLoaderRoute: typeof ExpertosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/login': {
+      id: '/login'
+      path: '/login'
+      fullPath: '/login'
+      preLoaderRoute: typeof LoginRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/precios': {
@@ -82,13 +185,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof PreciosRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/registro': {
+      id: '/registro'
+      path: '/registro'
+      fullPath: '/registro'
+      preLoaderRoute: typeof RegistroRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AcademiaRoute: AcademiaRoute,
+  AutomatizacionRoute: AutomatizacionRoute,
   ComoFuncionaRoute: ComoFuncionaRoute,
+  ExpertosRoute: ExpertosRoute,
+  LoginRoute: LoginRoute,
   PreciosRoute: PreciosRoute,
+  RegistroRoute: RegistroRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
