@@ -1,0 +1,272 @@
+{
+  "brand": { "name": "Nodo", "tagline": "Automatización con IA para equipos que no pueden parar" },
+  "nav": {
+    "automation": "Automatización",
+    "experts": "Expertos",
+    "academy": "Academia",
+    "pricing": "Precios",
+    "howItWorks": "Cómo funciona",
+    "login": "Iniciar sesión",
+    "cta": "Solicitar automatización",
+    "app": "Mi panel"
+  },
+  "common": {
+    "language": "Idioma",
+    "theme": "Tema",
+    "themeLight": "Claro",
+    "themeDark": "Oscuro",
+    "spanish": "Español",
+    "english": "Inglés",
+    "loading": "Cargando",
+    "soon": "Muy pronto",
+    "back": "Volver al inicio",
+    "menu": "Menú",
+    "close": "Cerrar",
+    "optional": "opcional"
+  },
+  "home": {
+    "meta": {
+      "title": "Nodo — Automatiza lo que hoy te consume el día",
+      "description": "Nodo analiza tu proceso con IA y te entrega la automatización funcionando y documentada. Planes desde 349.000 COP al mes."
+    },
+    "hero": {
+      "eyebrow": "Plataforma de automatización con IA",
+      "title": "Automatiza lo que hoy te consume el día",
+      "subtitle": "Nos cuentas el proceso, nuestra plataforma lo analiza con IA y te entregamos la automatización funcionando dentro de tus herramientas actuales.",
+      "cta": "Solicitar mi automatización",
+      "secondary": "Ver cómo funciona",
+      "note": "Sin instalaciones. Sin equipo técnico propio.",
+      "diagramLabel": "Diagrama de nodos conectados representando un proceso automatizado"
+    },
+    "steps": {
+      "title": "Cómo funciona",
+      "subtitle": "Cuatro pasos, un resultado: el proceso deja de depender de ti.",
+      "items": [
+        {
+          "title": "Cuéntanos tu proceso",
+          "body": "Describes la tarea repetitiva en lenguaje natural. Sin diagramas técnicos ni documentación previa."
+        },
+        {
+          "title": "Recibes una cotización automática",
+          "body": "La IA analiza alcance, herramientas y complejidad, y devuelve precio y tiempo estimado."
+        },
+        {
+          "title": "Construimos la automatización",
+          "body": "Un experto validado la implementa y la prueba con tus datos reales."
+        },
+        {
+          "title": "La recibes funcionando y documentada",
+          "body": "Entregamos la automatización activa, con documentación y soporte según tu plan."
+        }
+      ]
+    },
+    "modules": {
+      "title": "Tres formas de avanzar",
+      "subtitle": "Una plataforma, tres módulos que se refuerzan entre sí.",
+      "automation": {
+        "title": "Automatización a la medida",
+        "body": "Cada solicitud se analiza, se cotiza y se construye según tu operación real, no según una plantilla.",
+        "points": ["Análisis del proceso con IA", "Cotización transparente", "Entrega documentada"]
+      },
+      "experts": {
+        "title": "Contrata expertos",
+        "body": "Accede a especialistas verificados en automatización, datos e IA aplicada cuando necesitas más manos.",
+        "points": ["Perfiles verificados", "Alcance y precio acordados"]
+      },
+      "academy": {
+        "title": "Academia de IA aplicada",
+        "body": "Formación práctica para que tu equipo mantenga y amplíe lo que construimos.",
+        "points": ["Rutas por rol", "Casos reales"]
+      }
+    },
+    "industries": {
+      "title": "Casos por área",
+      "subtitle": "Los procesos que más rápido dejan de consumir tiempo.",
+      "items": [
+        { "title": "Ventas y CRM", "body": "Registro de leads, seguimientos y actualización del CRM sin trabajo manual." },
+        { "title": "Atención al cliente", "body": "Clasificación de tickets, respuestas asistidas y escalamiento automático." },
+        { "title": "Facturación", "body": "Emisión, envío y conciliación de facturas con validaciones automáticas." },
+        { "title": "Marketing y contenido", "body": "Producción, aprobación y publicación de contenido en varios canales." },
+        { "title": "Operaciones e inventario", "body": "Alertas de stock, órdenes de compra y sincronización entre sistemas." },
+        { "title": "Reportes de datos", "body": "Consolidación de fuentes y reportes recurrentes listos cada mañana." }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "items": [
+        { "q": "¿Necesito equipo técnico para usar Nodo?", "a": "No. Describes el proceso en lenguaje natural y nosotros nos encargamos del análisis, la construcción y la documentación." },
+        { "q": "¿Cuánto tarda una automatización?", "a": "La cotización automática incluye el tiempo estimado. La mayoría de procesos se entregan en días, no meses." },
+        { "q": "¿Funciona con las herramientas que ya uso?", "a": "Sí. Construimos sobre tus herramientas actuales cuando exponen integraciones o API." },
+        { "q": "¿Quién construye la automatización?", "a": "Expertos validados dentro de la plataforma, coordinados por Nodo y con revisión antes de la entrega." },
+        { "q": "¿Puedo cambiar de plan?", "a": "Sí, puedes subir o bajar de plan en cualquier momento; el cambio aplica en el siguiente ciclo." },
+        { "q": "¿Qué pasa con mis datos?", "a": "Solo accedemos a lo necesario para construir y probar la automatización, con permisos acotados y revocables." }
+      ]
+    },
+    "finalCta": {
+      "title": "Empieza por el proceso que más te cuesta",
+      "body": "Cuéntanos una sola tarea repetitiva y te mostramos qué tan rápido puede dejar de ser tu problema.",
+      "cta": "Crear mi cuenta",
+      "secondary": "Ver precios"
+    }
+  },
+  "pricing": {
+    "meta": {
+      "title": "Precios — Nodo",
+      "description": "Planes de automatización con IA de Nodo: Starter, Growth y Enterprise. Comparativa completa, facturación mensual o anual con 20% de descuento."
+    },
+    "title": "Precios claros para procesos reales",
+    "subtitle": "Elige según cuántas automatizaciones necesitas activas al mismo tiempo.",
+    "monthly": "Mensual",
+    "annual": "Anual",
+    "annualDiscount": "20% de descuento",
+    "currencyNote": "Tasa de cambio simulada: 1 USD = 4.000 COP. Referencia informativa.",
+    "perMonth": "/mes",
+    "perYear": "/año",
+    "custom": "Precio a convenir",
+    "cta": "Empezar",
+    "ctaEnterprise": "Hablar con ventas",
+    "popular": "Más elegido",
+    "compareTitle": "Comparativa completa",
+    "features": {
+      "activeAutomations": "Automatizaciones activas",
+      "monthlyRequests": "Solicitudes por mes",
+      "support": "Soporte",
+      "academy": "Academia",
+      "expertDiscount": "Descuento en expertos",
+      "assignedExpert": "Experto asignado",
+      "sla": "SLA de respuesta",
+      "training": "Capacitación al equipo",
+      "integrations": "Integraciones a medida"
+    },
+    "values": {
+      "unlimited": "Ilimitadas",
+      "requestsUnlimited": "Ilimitadas",
+      "supportEmail": "Email",
+      "supportPriority": "Prioritario",
+      "supportSla": "Prioritario con SLA",
+      "academyBasic": "Básica",
+      "academyFull": "Completa",
+      "discount10": "10%",
+      "included": "Incluido",
+      "notIncluded": "No incluido"
+    },
+    "plans": {
+      "starter": { "name": "Starter", "description": "Para validar la primera automatización." },
+      "growth": { "name": "Growth", "description": "Para equipos que ya automatizan varios procesos." },
+      "enterprise": { "name": "Enterprise", "description": "Para operaciones con volumen y requisitos propios." }
+    }
+  },
+  "howItWorks": {
+    "meta": {
+      "title": "Cómo funciona — Nodo",
+      "description": "Del proceso descrito a la automatización funcionando: estados, responsables y tiempos del flujo de trabajo de Nodo."
+    },
+    "title": "Del proceso descrito a la automatización funcionando",
+    "subtitle": "Este es el recorrido completo de una solicitud dentro de Nodo, con lo que pasa en cada estado.",
+    "diagramTitle": "Diagrama de estados de una solicitud",
+    "diagramNote": "Cada estado es visible en tu panel, con responsable y fecha.",
+    "states": [
+      { "name": "Borrador", "owner": "Cliente", "body": "Describes el proceso, las herramientas y el resultado esperado." },
+      { "name": "En análisis", "owner": "IA de Nodo", "body": "Se identifican pasos, integraciones y riesgos, y se estima el esfuerzo." },
+      { "name": "Cotizada", "owner": "Nodo", "body": "Recibes precio, alcance y tiempo estimado para aprobar o ajustar." },
+      { "name": "En construcción", "owner": "Experto asignado", "body": "Se implementa la automatización y se prueba con datos reales." },
+      { "name": "En revisión", "owner": "Nodo + Cliente", "body": "Validas el resultado y pides ajustes antes de la entrega final." },
+      { "name": "Activa", "owner": "Cliente", "body": "La automatización queda funcionando y documentada, con soporte según tu plan." }
+    ],
+    "faqTitle": "Antes de empezar",
+    "cta": "Crear mi cuenta"
+  },
+  "auth": {
+    "login": {
+      "meta": { "title": "Iniciar sesión — Nodo", "description": "Entra a tu panel de Nodo para gestionar tus automatizaciones." },
+      "title": "Entra a tu panel",
+      "subtitle": "Gestiona tus automatizaciones y solicitudes.",
+      "submit": "Iniciar sesión",
+      "noAccount": "¿No tienes cuenta?",
+      "createAccount": "Crear cuenta"
+    },
+    "register": {
+      "meta": { "title": "Crear cuenta — Nodo", "description": "Crea tu cuenta en Nodo como cliente o como experto en automatización." },
+      "title": "Crea tu cuenta",
+      "subtitle": "Empieza por la primera automatización.",
+      "submit": "Crear cuenta",
+      "hasAccount": "¿Ya tienes cuenta?",
+      "goLogin": "Iniciar sesión",
+      "accountType": "Tipo de cuenta",
+      "client": "Cliente",
+      "clientHint": "Quiero automatizar procesos de mi empresa.",
+      "expert": "Experto",
+      "expertHint": "Quiero construir automatizaciones para clientes.",
+      "expertPending": "Las cuentas de experto quedan como pendientes de verificación.",
+      "success": "Cuenta creada. Revisa tu correo si te pedimos confirmarlo."
+    },
+    "fields": {
+      "fullName": "Nombre completo",
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "company": "Empresa",
+      "showPassword": "Mostrar contraseña",
+      "hidePassword": "Ocultar contraseña"
+    },
+    "errors": {
+      "nameRequired": "Escribe tu nombre completo.",
+      "emailRequired": "Escribe tu correo electrónico.",
+      "emailInvalid": "El correo no tiene un formato válido.",
+      "passwordRequired": "Escribe una contraseña.",
+      "passwordShort": "La contraseña debe tener al menos 8 caracteres.",
+      "invalidCredentials": "Correo o contraseña incorrectos.",
+      "generic": "No pudimos completar la operación. Inténtalo de nuevo."
+    }
+  },
+  "app": {
+    "meta": { "title": "Panel — Nodo", "description": "Panel de control de tus automatizaciones en Nodo." },
+    "title": "Panel",
+    "greeting": "Hola",
+    "nav": {
+      "dashboard": "Resumen",
+      "requests": "Solicitudes",
+      "experts": "Expertos",
+      "academy": "Academia",
+      "billing": "Facturación",
+      "settings": "Ajustes"
+    },
+    "account": { "menu": "Mi cuenta", "profile": "Perfil", "signOut": "Cerrar sesión" },
+    "role": { "client": "Cliente", "expert": "Experto", "admin": "Administrador", "expertPending": "Experto pendiente de verificación" },
+    "empty": {
+      "title": "Aún no tienes automatizaciones",
+      "body": "Cuando describas tu primer proceso, aparecerá aquí con su estado y su experto asignado.",
+      "cta": "Describir mi proceso"
+    },
+    "stats": { "active": "Activas", "inProgress": "En construcción", "requests": "Solicitudes del mes" },
+    "placeholder": { "title": "Módulo en preparación", "body": "Esta sección estará disponible en la siguiente entrega." }
+  },
+  "placeholders": {
+    "automation": {
+      "meta": { "title": "Automatización — Nodo", "description": "Automatización a la medida con IA: análisis del proceso, cotización y entrega documentada." },
+      "title": "Automatización a la medida",
+      "body": "Estamos preparando esta sección. Mientras tanto, puedes crear tu cuenta y describir tu proceso."
+    },
+    "experts": {
+      "meta": { "title": "Expertos — Nodo", "description": "Marketplace de expertos verificados en automatización, datos e IA aplicada." },
+      "title": "Contrata expertos",
+      "body": "El marketplace de expertos verificados abrirá muy pronto."
+    },
+    "academy": {
+      "meta": { "title": "Academia — Nodo", "description": "Academia de IA aplicada: formación práctica para equipos que automatizan." },
+      "title": "Academia de IA aplicada",
+      "body": "Las rutas de formación estarán disponibles muy pronto."
+    }
+  },
+  "footer": {
+    "product": "Producto",
+    "company": "Compañía",
+    "legal": "Legal",
+    "about": "Sobre Nodo",
+    "contact": "Contacto",
+    "terms": "Términos",
+    "privacy": "Privacidad",
+    "social": "Redes",
+    "rights": "Todos los derechos reservados.",
+    "description": "Automatización con IA construida por expertos y entregada funcionando."
+  }
+}

@@ -2,49 +2,41 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 
 import { PublicLayout } from "@/components/layout/PublicLayout";
-import { BentoModules } from "@/components/marketing/BentoModules";
 import { Faq } from "@/components/marketing/Faq";
 import { FinalCta } from "@/components/marketing/FinalCta";
-import { Hero } from "@/components/marketing/Hero";
-import { HowItWorksSteps } from "@/components/marketing/HowItWorksSteps";
-import { Industries } from "@/components/marketing/Industries";
 import { PricingSection } from "@/components/marketing/PricingSection";
 import { Section, SectionHeader } from "@/components/marketing/Section";
 
-export const Route = createFileRoute("/")({
+export const Route = createFileRoute("/precios")({
   head: () => ({
     meta: [
-      { title: "Nodo — Automatiza lo que hoy te consume el día" },
+      { title: "Precios — Nodo" },
       {
         name: "description",
         content:
-          "Nodo analiza tu proceso con IA y te entrega la automatización funcionando y documentada. Planes desde 349.000 COP al mes.",
+          "Planes de automatización con IA de Nodo: Starter, Growth y Enterprise. Comparativa completa y facturación mensual o anual.",
       },
-      { property: "og:title", content: "Nodo — Automatiza lo que hoy te consume el día" },
+      { property: "og:title", content: "Precios — Nodo" },
       {
         property: "og:description",
-        content: "Automatización con IA construida por expertos y entregada funcionando.",
+        content: "Starter, Growth y Enterprise: elige según cuántas automatizaciones necesitas activas.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
-  component: HomePage,
+  component: PricingPage,
 });
 
-function HomePage() {
+function PricingPage() {
   const { t } = useTranslation();
 
   return (
     <PublicLayout>
-      <Hero />
-      <HowItWorksSteps />
-      <BentoModules />
-      <Industries />
-      <Section>
+      <Section className="border-t-0">
         <SectionHeader title={t("pricing.title")} subtitle={t("pricing.subtitle")} />
         <div className="mt-12">
-          <PricingSection />
+          <PricingSection withComparison />
         </div>
       </Section>
       <Faq />
