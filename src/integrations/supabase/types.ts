@@ -14,16 +14,120 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      plans: {
+        Row: {
+          academy_level: string
+          active_automations: string
+          code: string
+          created_at: string
+          expert_discount: number | null
+          id: string
+          is_custom_price: boolean
+          monthly_requests: string
+          name: string
+          price_cop: number | null
+          sort_order: number
+          support_level: string
+        }
+        Insert: {
+          academy_level: string
+          active_automations: string
+          code: string
+          created_at?: string
+          expert_discount?: number | null
+          id?: string
+          is_custom_price?: boolean
+          monthly_requests: string
+          name: string
+          price_cop?: number | null
+          sort_order?: number
+          support_level: string
+        }
+        Update: {
+          academy_level?: string
+          active_automations?: string
+          code?: string
+          created_at?: string
+          expert_discount?: number | null
+          id?: string
+          is_custom_price?: boolean
+          monthly_requests?: string
+          name?: string
+          price_cop?: number | null
+          sort_order?: number
+          support_level?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          company_name: string | null
+          country: string | null
+          created_at: string
+          full_name: string | null
+          id: string
+          phone: string | null
+          preferred_language: string
+        }
+        Insert: {
+          avatar_url?: string | null
+          company_name?: string | null
+          country?: string | null
+          created_at?: string
+          full_name?: string | null
+          id: string
+          phone?: string | null
+          preferred_language?: string
+        }
+        Update: {
+          avatar_url?: string | null
+          company_name?: string | null
+          country?: string | null
+          created_at?: string
+          full_name?: string | null
+          id?: string
+          phone?: string | null
+          preferred_language?: string
+        }
+        Relationships: []
+      }
+      user_roles: {
+        Row: {
+          created_at: string
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "client" | "expert" | "admin"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +254,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["client", "expert", "admin"],
+    },
   },
 } as const
