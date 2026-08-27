@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AuthenticatedRouteRouteImport } from './routes/_authenticated/route'
 import { Route as AcademiaRouteImport } from './routes/academia'
 import { Route as AutomatizacionRouteImport } from './routes/automatizacion'
 import { Route as ComoFuncionaRouteImport } from './routes/como-funciona'
@@ -17,10 +18,15 @@ import { Route as ExpertosRouteImport } from './routes/expertos'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as PreciosRouteImport } from './routes/precios'
 import { Route as RegistroRouteImport } from './routes/registro'
+import { Route as AuthenticatedAppRouteImport } from './routes/_authenticated/app'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AuthenticatedRouteRoute = AuthenticatedRouteRouteImport.update({
+  id: '/_authenticated',
   getParentRoute: () => rootRouteImport,
 } as any)
 const AcademiaRoute = AcademiaRouteImport.update({
@@ -58,6 +64,11 @@ const RegistroRoute = RegistroRouteImport.update({
   path: '/registro',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AuthenticatedAppRoute = AuthenticatedAppRouteImport.update({
+  id: '/app',
+  path: '/app',
+  getParentRoute: () => AuthenticatedRouteRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -68,6 +79,7 @@ export interface FileRoutesByFullPath {
   '/login': typeof LoginRoute
   '/precios': typeof PreciosRoute
   '/registro': typeof RegistroRoute
+  '/app': typeof AuthenticatedAppRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -78,10 +90,12 @@ export interface FileRoutesByTo {
   '/login': typeof LoginRoute
   '/precios': typeof PreciosRoute
   '/registro': typeof RegistroRoute
+  '/app': typeof AuthenticatedAppRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/_authenticated': typeof AuthenticatedRouteRouteWithChildren
   '/academia': typeof AcademiaRoute
   '/automatizacion': typeof AutomatizacionRoute
   '/como-funciona': typeof ComoFuncionaRoute
@@ -89,6 +103,7 @@ export interface FileRoutesById {
   '/login': typeof LoginRoute
   '/precios': typeof PreciosRoute
   '/registro': typeof RegistroRoute
+  '/_authenticated/app': typeof AuthenticatedAppRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -101,6 +116,7 @@ export interface FileRouteTypes {
     | '/login'
     | '/precios'
     | '/registro'
+    | '/app'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -111,9 +127,11 @@ export interface FileRouteTypes {
     | '/login'
     | '/precios'
     | '/registro'
+    | '/app'
   id:
     | '__root__'
     | '/'
+    | '/_authenticated'
     | '/academia'
     | '/automatizacion'
     | '/como-funciona'
@@ -121,10 +139,12 @@ export interface FileRouteTypes {
     | '/login'
     | '/precios'
     | '/registro'
+    | '/_authenticated/app'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AuthenticatedRouteRoute: typeof AuthenticatedRouteRouteWithChildren
   AcademiaRoute: typeof AcademiaRoute
   AutomatizacionRoute: typeof AutomatizacionRoute
   ComoFuncionaRoute: typeof ComoFuncionaRoute
@@ -141,6 +161,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/_authenticated': {
+      id: '/_authenticated'
+      path: ''
+      fullPath: '/'
+      preLoaderRoute: typeof AuthenticatedRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/academia': {
@@ -192,11 +219,30 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof RegistroRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/_authenticated/app': {
+      id: '/_authenticated/app'
+      path: '/app'
+      fullPath: '/app'
+      preLoaderRoute: typeof AuthenticatedAppRouteImport
+      parentRoute: typeof AuthenticatedRouteRoute
+    }
   }
 }
 
+interface AuthenticatedRouteRouteChildren {
+  AuthenticatedAppRoute: typeof AuthenticatedAppRoute
+}
+
+const AuthenticatedRouteRouteChildren: AuthenticatedRouteRouteChildren = {
+  AuthenticatedAppRoute: AuthenticatedAppRoute,
+}
+
+const AuthenticatedRouteRouteWithChildren =
+  AuthenticatedRouteRoute._addFileChildren(AuthenticatedRouteRouteChildren)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AuthenticatedRouteRoute: AuthenticatedRouteRouteWithChildren,
   AcademiaRoute: AcademiaRoute,
   AutomatizacionRoute: AutomatizacionRoute,
   ComoFuncionaRoute: ComoFuncionaRoute,
