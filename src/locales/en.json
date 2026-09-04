@@ -1,5 +1,8 @@
 {
-  "brand": { "name": "Nodo", "tagline": "AI automation for teams that can't slow down" },
+  "brand": {
+    "name": "Nodo",
+    "tagline": "AI automation for teams that can't slow down"
+  },
   "nav": {
     "automation": "Automation",
     "experts": "Experts",
@@ -36,16 +39,44 @@
       "cta": "Request my automation",
       "secondary": "See how it works",
       "note": "No installs. No in-house engineering team.",
-      "diagramLabel": "Diagram of connected nodes representing an automated process"
+      "diagramLabel": "Diagram of connected nodes representing an automated process",
+      "chip": "New — Instant AI quoting",
+      "titleAccent": "without writing a line of code",
+      "metrics": {
+        "delivery": {
+          "value": "3h",
+          "label": "Fastest delivery"
+        },
+        "integrations": {
+          "value": "100+",
+          "label": "Integrations"
+        },
+        "code": {
+          "value": "0",
+          "label": "Code on your side"
+        }
+      }
     },
     "steps": {
       "title": "How it works",
       "subtitle": "Four steps, one outcome: the process stops depending on you.",
       "items": [
-        { "title": "Tell us your process", "body": "Describe the repetitive task in plain language. No technical diagrams or prior documentation." },
-        { "title": "Get an automatic quote", "body": "AI reviews scope, tools and complexity, then returns price and estimated time." },
-        { "title": "We build the automation", "body": "A vetted expert implements it and tests it against your real data." },
-        { "title": "You receive it running and documented", "body": "We deliver the automation live, documented, with support based on your plan." }
+        {
+          "title": "Tell us your process",
+          "body": "Describe the repetitive task in plain language. No technical diagrams or prior documentation."
+        },
+        {
+          "title": "Get an automatic quote",
+          "body": "AI reviews scope, tools and complexity, then returns price and estimated time."
+        },
+        {
+          "title": "We build the automation",
+          "body": "A vetted expert implements it and tests it against your real data."
+        },
+        {
+          "title": "You receive it running and documented",
+          "body": "We deliver the automation live, documented, with support based on your plan."
+        }
       ]
     },
     "modules": {
@@ -54,40 +85,86 @@
       "automation": {
         "title": "Custom automation",
         "body": "Every request is analyzed, quoted and built around your actual operation, not a template.",
-        "points": ["AI process analysis", "Transparent quote", "Documented delivery"]
+        "points": [
+          "AI process analysis",
+          "Transparent quote",
+          "Documented delivery"
+        ]
       },
       "experts": {
         "title": "Hire experts",
         "body": "Reach verified specialists in automation, data and applied AI when you need extra hands.",
-        "points": ["Verified profiles", "Agreed scope and price"]
+        "points": [
+          "Verified profiles",
+          "Agreed scope and price"
+        ]
       },
       "academy": {
         "title": "Applied AI Academy",
         "body": "Hands-on training so your team can maintain and extend what we build.",
-        "points": ["Role-based tracks", "Real cases"]
+        "points": [
+          "Role-based tracks",
+          "Real cases"
+        ]
       }
     },
     "industries": {
       "title": "Use cases by area",
       "subtitle": "The processes that stop draining time fastest.",
       "items": [
-        { "title": "Sales and CRM", "body": "Lead capture, follow-ups and CRM updates without manual work." },
-        { "title": "Customer support", "body": "Ticket triage, assisted replies and automatic escalation." },
-        { "title": "Invoicing", "body": "Issuing, sending and reconciling invoices with automatic checks." },
-        { "title": "Marketing and content", "body": "Producing, approving and publishing content across channels." },
-        { "title": "Operations and inventory", "body": "Stock alerts, purchase orders and system-to-system syncing." },
-        { "title": "Data reporting", "body": "Consolidated sources and recurring reports ready every morning." }
+        {
+          "title": "Sales and CRM",
+          "body": "Lead capture, follow-ups and CRM updates without manual work."
+        },
+        {
+          "title": "Customer support",
+          "body": "Ticket triage, assisted replies and automatic escalation."
+        },
+        {
+          "title": "Invoicing",
+          "body": "Issuing, sending and reconciling invoices with automatic checks."
+        },
+        {
+          "title": "Marketing and content",
+          "body": "Producing, approving and publishing content across channels."
+        },
+        {
+          "title": "Operations and inventory",
+          "body": "Stock alerts, purchase orders and system-to-system syncing."
+        },
+        {
+          "title": "Data reporting",
+          "body": "Consolidated sources and recurring reports ready every morning."
+        }
       ]
     },
     "faq": {
       "title": "Frequently asked questions",
       "items": [
-        { "q": "Do I need a technical team to use Nodo?", "a": "No. You describe the process in plain language and we handle analysis, build and documentation." },
-        { "q": "How long does an automation take?", "a": "The automatic quote includes an estimated time. Most processes ship in days, not months." },
-        { "q": "Does it work with the tools I already use?", "a": "Yes. We build on your current tools whenever they expose integrations or an API." },
-        { "q": "Who builds the automation?", "a": "Vetted experts inside the platform, coordinated by Nodo and reviewed before delivery." },
-        { "q": "Can I change plans?", "a": "Yes, you can move up or down at any time; the change applies on the next cycle." },
-        { "q": "What happens with my data?", "a": "We only access what's needed to build and test the automation, with narrow, revocable permissions." }
+        {
+          "q": "Do I need a technical team to use Nodo?",
+          "a": "No. You describe the process in plain language and we handle analysis, build and documentation."
+        },
+        {
+          "q": "How long does an automation take?",
+          "a": "The automatic quote includes an estimated time. Most processes ship in days, not months."
+        },
+        {
+          "q": "Does it work with the tools I already use?",
+          "a": "Yes. We build on your current tools whenever they expose integrations or an API."
+        },
+        {
+          "q": "Who builds the automation?",
+          "a": "Vetted experts inside the platform, coordinated by Nodo and reviewed before delivery."
+        },
+        {
+          "q": "Can I change plans?",
+          "a": "Yes, you can move up or down at any time; the change applies on the next cycle."
+        },
+        {
+          "q": "What happens with my data?",
+          "a": "We only access what's needed to build and test the automation, with narrow, revocable permissions."
+        }
       ]
     },
     "finalCta": {
@@ -139,9 +216,18 @@
       "notIncluded": "Not included"
     },
     "plans": {
-      "starter": { "name": "Starter", "description": "To validate your first automation." },
-      "growth": { "name": "Growth", "description": "For teams already automating several processes." },
-      "enterprise": { "name": "Enterprise", "description": "For high-volume operations with specific requirements." }
+      "starter": {
+        "name": "Starter",
+        "description": "To validate your first automation."
+      },
+      "growth": {
+        "name": "Growth",
+        "description": "For teams already automating several processes."
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "For high-volume operations with specific requirements."
+      }
     }
   },
   "howItWorks": {
@@ -154,19 +240,46 @@
     "diagramTitle": "Request state diagram",
     "diagramNote": "Every state is visible in your dashboard, with owner and date.",
     "states": [
-      { "name": "Draft", "owner": "Client", "body": "You describe the process, the tools and the expected outcome." },
-      { "name": "In analysis", "owner": "Nodo AI", "body": "Steps, integrations and risks are identified and effort is estimated." },
-      { "name": "Quoted", "owner": "Nodo", "body": "You receive price, scope and estimated time to approve or adjust." },
-      { "name": "In build", "owner": "Assigned expert", "body": "The automation is implemented and tested with real data." },
-      { "name": "In review", "owner": "Nodo + Client", "body": "You validate the result and request changes before final delivery." },
-      { "name": "Live", "owner": "Client", "body": "The automation runs and stays documented, with support based on your plan." }
+      {
+        "name": "Draft",
+        "owner": "Client",
+        "body": "You describe the process, the tools and the expected outcome."
+      },
+      {
+        "name": "In analysis",
+        "owner": "Nodo AI",
+        "body": "Steps, integrations and risks are identified and effort is estimated."
+      },
+      {
+        "name": "Quoted",
+        "owner": "Nodo",
+        "body": "You receive price, scope and estimated time to approve or adjust."
+      },
+      {
+        "name": "In build",
+        "owner": "Assigned expert",
+        "body": "The automation is implemented and tested with real data."
+      },
+      {
+        "name": "In review",
+        "owner": "Nodo + Client",
+        "body": "You validate the result and request changes before final delivery."
+      },
+      {
+        "name": "Live",
+        "owner": "Client",
+        "body": "The automation runs and stays documented, with support based on your plan."
+      }
     ],
     "faqTitle": "Before you start",
     "cta": "Create my account"
   },
   "auth": {
     "login": {
-      "meta": { "title": "Sign in — Nodo", "description": "Sign in to your Nodo dashboard to manage your automations." },
+      "meta": {
+        "title": "Sign in — Nodo",
+        "description": "Sign in to your Nodo dashboard to manage your automations."
+      },
       "title": "Sign in to your dashboard",
       "subtitle": "Manage your automations and requests.",
       "submit": "Sign in",
@@ -174,7 +287,10 @@
       "createAccount": "Create account"
     },
     "register": {
-      "meta": { "title": "Create account — Nodo", "description": "Create your Nodo account as a client or as an automation expert." },
+      "meta": {
+        "title": "Create account — Nodo",
+        "description": "Create your Nodo account as a client or as an automation expert."
+      },
       "title": "Create your account",
       "subtitle": "Start with your first automation.",
       "submit": "Create account",
@@ -207,7 +323,10 @@
     }
   },
   "app": {
-    "meta": { "title": "Dashboard — Nodo", "description": "Control panel for your Nodo automations." },
+    "meta": {
+      "title": "Dashboard — Nodo",
+      "description": "Control panel for your Nodo automations."
+    },
     "title": "Dashboard",
     "greeting": "Hi",
     "nav": {
@@ -218,29 +337,54 @@
       "billing": "Billing",
       "settings": "Settings"
     },
-    "account": { "menu": "My account", "profile": "Profile", "signOut": "Sign out" },
-    "role": { "client": "Client", "expert": "Expert", "admin": "Admin", "expertPending": "Expert pending verification" },
+    "account": {
+      "menu": "My account",
+      "profile": "Profile",
+      "signOut": "Sign out"
+    },
+    "role": {
+      "client": "Client",
+      "expert": "Expert",
+      "admin": "Admin",
+      "expertPending": "Expert pending verification"
+    },
     "empty": {
       "title": "You don't have automations yet",
       "body": "Once you describe your first process, it will show up here with its state and assigned expert.",
       "cta": "Describe my process"
     },
-    "stats": { "active": "Live", "inProgress": "In build", "requests": "Requests this month" },
-    "placeholder": { "title": "Module in preparation", "body": "This section will be available in the next release." }
+    "stats": {
+      "active": "Live",
+      "inProgress": "In build",
+      "requests": "Requests this month"
+    },
+    "placeholder": {
+      "title": "Module in preparation",
+      "body": "This section will be available in the next release."
+    }
   },
   "placeholders": {
     "automation": {
-      "meta": { "title": "Automation — Nodo", "description": "Custom AI automation: process analysis, quote and documented delivery." },
+      "meta": {
+        "title": "Automation — Nodo",
+        "description": "Custom AI automation: process analysis, quote and documented delivery."
+      },
       "title": "Custom automation",
       "body": "We're still building this section. In the meantime, create your account and describe your process."
     },
     "experts": {
-      "meta": { "title": "Experts — Nodo", "description": "Marketplace of verified experts in automation, data and applied AI." },
+      "meta": {
+        "title": "Experts — Nodo",
+        "description": "Marketplace of verified experts in automation, data and applied AI."
+      },
       "title": "Hire experts",
       "body": "The verified expert marketplace opens very soon."
     },
     "academy": {
-      "meta": { "title": "Academy — Nodo", "description": "Applied AI Academy: hands-on training for teams that automate." },
+      "meta": {
+        "title": "Academy — Nodo",
+        "description": "Applied AI Academy: hands-on training for teams that automate."
+      },
       "title": "Applied AI Academy",
       "body": "Learning tracks will be available very soon."
     }
