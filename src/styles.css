@@ -5,16 +5,16 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Sistema de diseño NODO.
+ * Sistema de diseño NODO — base oscura.
  * Todos los colores se declaran como tokens semánticos en HSL y se mapean a
  * utilidades Tailwind en @theme inline. Nunca usar hex directo en componentes.
  */
 
 @theme inline {
-  --radius-sm: 0.375rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 0.75rem;
-  --radius-xl: 1rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
   --radius-pill: 999px;
 
   --color-background: hsl(var(--background));
@@ -23,6 +23,7 @@
   --color-surface-foreground: hsl(var(--ink));
   --color-surface-muted: hsl(var(--surface-muted));
   --color-border: hsl(var(--border));
+  --color-border-strong: hsl(var(--border-strong));
   --color-input: hsl(var(--border));
   --color-ring: hsl(var(--ring));
   --color-ink: hsl(var(--ink));
@@ -30,11 +31,14 @@
   --color-muted: hsl(var(--surface-muted));
   --color-muted-foreground: hsl(var(--ink-muted));
   --color-primary: hsl(var(--primary));
+  --color-primary-mid: hsl(var(--primary-mid));
+  --color-primary-hover: hsl(var(--primary-hover));
   --color-primary-foreground: hsl(var(--primary-foreground));
   --color-primary-muted: hsl(var(--primary-muted));
   --color-secondary: hsl(var(--surface-muted));
   --color-secondary-foreground: hsl(var(--ink));
   --color-accent: hsl(var(--accent));
+  --color-accent-bright: hsl(var(--accent-bright));
   --color-accent-foreground: hsl(var(--accent-foreground));
   --color-success: hsl(var(--success));
   --color-success-foreground: hsl(var(--success-foreground));
@@ -57,7 +61,7 @@
   --color-sidebar-border: hsl(var(--border));
   --color-sidebar-ring: hsl(var(--ring));
 
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Instrument Serif", ui-serif, Georgia, serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
 
@@ -70,49 +74,62 @@
   --text-3xl: 2rem;
   --text-5xl: 3rem;
   --text-6xl: 4rem;
+
+  --shadow-glow-primary: 0 4px 20px hsl(var(--primary) / 0.28);
+  --shadow-glow-accent: 0 4px 20px hsl(var(--accent) / 0.2);
 }
 
+/* Tema base: oscuro */
 :root {
   --radius: 0.75rem;
-  --background: 60 20% 98%;
+  --background: 225 20% 4%;
+  --surface: 228 24% 8%;
+  --surface-muted: 225 27% 12%;
+  --border: 229 24% 18%;
+  --border-strong: 229 27% 25%;
+  --ink: 260 9% 94%;
+  --ink-muted: 228 13% 61%;
+  --primary: 242 100% 73%;
+  --primary-mid: 242 100% 78%;
+  --primary-hover: 243 100% 81%;
+  --primary-foreground: 225 20% 4%;
+  --primary-muted: 242 40% 18%;
+  --accent: 45 74% 48%;
+  --accent-bright: 45 80% 58%;
+  --accent-foreground: 225 20% 4%;
+  --success: 158 43% 56%;
+  --success-foreground: 225 20% 4%;
+  --warning: 45 80% 58%;
+  --warning-foreground: 225 20% 4%;
+  --danger: 0 84% 60%;
+  --danger-foreground: 0 0% 100%;
+  --ring: 242 100% 73%;
+}
+
+/* Modo claro opcional (no es el default) */
+.light {
+  --background: 48 24% 96%;
   --surface: 0 0% 100%;
-  --surface-muted: 48 15% 95%;
-  --border: 45 13% 88%;
-  --ink: 225 18% 7%;
-  --ink-muted: 222 5% 38%;
-  --primary: 245 46% 31%;
+  --surface-muted: 45 21% 93%;
+  --border: 42 18% 86%;
+  --border-strong: 42 18% 78%;
+  --ink: 225 14% 5%;
+  --ink-muted: 220 6% 37%;
+  --primary: 244 57% 24%;
+  --primary-mid: 244 50% 32%;
+  --primary-hover: 244 50% 30%;
   --primary-foreground: 0 0% 100%;
-  --primary-muted: 245 40% 94%;
-  --accent: 45 68% 47%;
-  --accent-foreground: 225 18% 7%;
+  --primary-muted: 244 40% 93%;
+  --accent: 46 85% 39%;
+  --accent-bright: 45 74% 48%;
+  --accent-foreground: 0 0% 100%;
   --success: 161 45% 33%;
   --success-foreground: 0 0% 100%;
   --warning: 36 80% 40%;
   --warning-foreground: 0 0% 100%;
   --danger: 3 71% 41%;
   --danger-foreground: 0 0% 100%;
-  --ring: 245 46% 31%;
-}
-
-.dark {
-  --background: 225 13% 6%;
-  --surface: 224 15% 10%;
-  --surface-muted: 222 16% 13%;
-  --border: 223 12% 19%;
-  --ink: 60 6% 95%;
-  --ink-muted: 215 7% 63%;
-  --primary: 244 100% 76%;
-  --primary-foreground: 225 18% 7%;
-  --primary-muted: 244 30% 20%;
-  --accent: 43 66% 62%;
-  --accent-foreground: 225 18% 7%;
-  --success: 161 40% 50%;
-  --success-foreground: 225 18% 7%;
-  --warning: 36 70% 58%;
-  --warning-foreground: 225 18% 7%;
-  --danger: 3 70% 62%;
-  --danger-foreground: 225 18% 7%;
-  --ring: 244 100% 76%;
+  --ring: 244 57% 24%;
 }
 
 @layer base {
@@ -122,6 +139,11 @@
 
   html {
     -webkit-text-size-adjust: 100%;
+    color-scheme: dark;
+  }
+
+  html.light {
+    color-scheme: light;
   }
 
   body {
@@ -129,12 +151,13 @@
     color: hsl(var(--ink));
     font-family: var(--font-sans);
     font-size: 1rem;
-    line-height: 1.6;
+    line-height: 1.65;
     overflow-x: hidden;
   }
 
   p {
-    line-height: 1.6;
+    line-height: 1.65;
+    max-width: 68ch;
   }
 
   :focus-visible {
@@ -156,6 +179,23 @@
   font-weight: 400;
   letter-spacing: -0.01em;
   line-height: 1.05;
+}
+
+/* Superficie de tarjeta semitransparente sobre el canvas animado */
+@utility surface-glass {
+  background-color: hsl(var(--surface) / 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid hsl(var(--border));
+  transition:
+    box-shadow 250ms ease-out,
+    transform 250ms ease-out,
+    border-color 250ms ease-out;
+
+  &:hover {
+    border-color: hsl(var(--border-strong));
+    box-shadow: 0 4px 20px hsl(var(--primary) / 0.18);
+    transform: translateY(-4px);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
