@@ -22,7 +22,7 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-4 py-3 sm:px-6">
+      <div className="mx-auto flex h-[3.75rem] max-w-6xl items-center justify-between gap-6 px-4 sm:px-6">
         <Link to="/" className="text-xl font-semibold tracking-tight text-ink">
           {t("brand.name")}
           <span className="text-accent">.</span>
