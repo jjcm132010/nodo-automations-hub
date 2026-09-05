@@ -108,9 +108,11 @@ export default function KineticGrid({ children, className, globalColor = "defaul
   },[animate]);
 
   return (
-    <div className={cn("relative w-full min-h-screen overflow-hidden bg-[#08090C]",className)}>
-      <canvas ref={canvasRef} className="fixed inset-0 w-full h-full z-0 pointer-events-none"/>
-      <div className="relative z-10 w-full h-full">{children}</div>
+    <div className={cn("absolute inset-0 z-0 overflow-hidden bg-[#08090C]", className)}>
+      <canvas ref={canvasRef} className="fixed inset-0 z-0 h-full w-full pointer-events-none" />
+      <div className="relative z-10 flex h-full flex-col items-center justify-center">
+        {children}
+      </div>
     </div>
   );
 }
