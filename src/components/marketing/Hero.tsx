@@ -57,7 +57,7 @@ export function Hero() {
 
           <dl className="flex flex-wrap items-center justify-center divide-x divide-border">
             {metrics.map((metric) => (
-              <div key={metric.label} className="px-4 py-2 text-center sm:px-6">
+              <div key={metric.label} className="px-3 py-2 text-center sm:px-6">
                 <dt className="font-data text-xl text-ink sm:text-2xl">{metric.value}</dt>
                 <dd className="mt-1 text-[10px] tracking-widest text-ink-muted uppercase sm:text-xs">
                   {metric.label}
